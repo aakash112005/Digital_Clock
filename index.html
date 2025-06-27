@@ -1,0 +1,58 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css">
+  <title>Clock Tools</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Digital Clock & Tools</h1>
+
+    <!-- Clock -->
+    <section>
+      <h2>Current Time</h2>
+      <div class="clock"></div>
+    </section>
+
+    <!-- Alarm -->
+    <section>
+      <h2>Alarm</h2>
+      <input type="time" id="alarmTime">
+      <button onclick="setAlarm()">Set Alarm</button>
+      <div id="alarmStatus"></div>
+    </section>
+
+    <!-- Stopwatch -->
+    <section>
+      <h2>Stopwatch</h2>
+      <div id="stopwatch">00:00:00</div>
+      <button onclick="startStopwatch()">Start</button>
+      <button onclick="stopStopwatch()">Stop</button>
+      <button onclick="resetStopwatch()">Reset</button>
+    </section>
+
+    <!-- Timer -->
+    <section>
+      <h2>Countdown Timer</h2>
+      <input type="number" id="timerInput" placeholder="Seconds">
+      <button onclick="startTimer()">Start Timer</button>
+      <div id="timerDisplay">00:00</div>
+    </section>
+
+    <!-- Scheduler -->
+    <section>
+      <h2>Task Scheduler</h2>
+      <input type="text" id="taskInput" placeholder="Task name">
+      <input type="time" id="taskTime">
+      <button onclick="scheduleTask()">Schedule</button>
+      <ul id="taskList"></ul>
+    </section>
+  </div>
+
+  <script src="project2.js"></script>
+</body>
+</html>
